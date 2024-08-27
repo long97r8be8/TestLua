@@ -2488,7 +2488,7 @@ local Paragraph = Section:Paragraph({
     ["Title"] = "Fast Attack",
     ["Content"] = "select Fast Attack"
 })
-    local Dropdown = Section:Dropdown("Dropdown", {
+local Dropdown = Section:Dropdown({
     ["Title"] = "Select Fast Attack",
     ["Multi"] = false,
     ["Options"] = {"Normal Attack", "Fast Attack", "LongSieuVip"},
