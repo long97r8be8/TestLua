@@ -2489,11 +2489,11 @@ local Paragraph = Section:Paragraph({
     ["Content"] = "select Fast Attack"
 })
 local Dropdown = Section:Dropdown({
-    ["Title"] = "Select Fast Attack",
-    ["Multi"] = false,
-    ["Options"] = {"Normal Attack", "Fast Attack", "LongSieuVip"},
-    ["Default"] = 1,
-    ["Place Holder Text"] = "Select Fast Attack",
+    Title = "Select Fast Attack",
+    Multi = false,
+    Options = {"Normal Attack", "Fast Attack", "LongSieuVip"},
+    Default = 1,
+    Place Holder Text = "Select Fast Attack",
     })
     Dropdown:SetValue("Fast Attack")
     Dropdown:OnChanged(function(Value)
@@ -2503,6 +2503,6 @@ local Dropdown = Section:Dropdown({
 	elseif _G.FastAttackGamer144_Mode == "Normal Attack" then
 		_G.Fast_Delay = 0.02
 	elseif _G.FastAttackGamer144YTB_Mode == "LongSieuVip" then
-	    _G.Fast_Delay = 0.000001
+	    _G.Fast_Delay = 0.0001
 	end
 end)
