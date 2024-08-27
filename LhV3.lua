@@ -2488,15 +2488,15 @@ local Paragraph = Section:Paragraph({
     ["Title"] = "Fast Attack",
     ["Content"] = "select Fast Attack"
 })
-    local DropdownDelayAttack = Section:Dropdown("DropdownDelayAttack", {
+    local Dropdown = Section:Dropdown("Dropdown", {
     ["Title"] = "Select Fast Attack",
     ["Multi"] = false,
     ["Options"] = {"Normal Attack", "Fast Attack", "LongSieuVip"},
     ["Default"] = 1,
     ["Place Holder Text"] = "Select Fast Attack",
     })
-    DropdownDelayAttack:SetValue("Fast Attack")
-    DropdownDelayAttack:OnChanged(function(Value)
+    Dropdown:SetValue("Fast Attack")
+    Dropdown:OnChanged(function(Value)
     _G.FastAttackGamer144_Mode = Value
 	if _G.FastAttackGamer144_Mode == "Fast Attack" then
 		_G.Fast_Delay = 0.03
